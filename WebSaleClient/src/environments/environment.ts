@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:51153/',
+  baseUrl: 'http://websalewebapi20170410090830.azurewebsites.net/',
   paramPath: '/Products',
 };

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://localhost:61709/'  
+  baseUrl: 'http://websalewebapi20170410090830.azurewebsites.net/'  
 };
