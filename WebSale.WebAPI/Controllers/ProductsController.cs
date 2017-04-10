@@ -7,7 +7,6 @@ using System.Web.OData;
 
 namespace WebSale.WebAPI.Controllers
 {
-    [EnableCors("*", "*", "GET,POST")]
     public class ProductsController : ODataController
     {
         // GET: api/Products

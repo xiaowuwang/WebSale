@@ -26,14 +26,11 @@ namespace WebSale.WebAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
-              new CamelCasePropertyNamesContractResolver();
+            //config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
+            //  new CamelCasePropertyNamesContractResolver();
 
             config.MapODataServiceRoute("odata", null, GetEdmModel(), new DefaultODataBatchHandler(GlobalConfiguration.DefaultServer));
             config.EnsureInitialized();
-
-            config.EnableCors(new EnableCorsAttribute("*", "*", "GET, POST, OPTIONS, PUT, DELETE"));
-
         }
 
         private static IEdmModel GetEdmModel()
